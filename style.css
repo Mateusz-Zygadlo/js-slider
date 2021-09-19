@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow-y: hidden;
+}
+.slider{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+.slide{
+    width: 100vw;
+    height: 100vh;
+    display: inline-block;
+}
+.controllers{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 40px;
+}
+.points{
+    position: fixed;
+    bottom: 5%;
+    left: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+.points span{
+    margin: 0 20px;
+}
+
+@media only screen and (max-width: 710px) {
+    .points span{
+        margin: 0 10px;
+    }
+}
+@media only screen and (max-width: 500px){
+    .points span{
+        margin: 0 5px;
+    }
+}

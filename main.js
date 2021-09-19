@@ -23,7 +23,7 @@ const addBasicSpan = () => {
 
 const nextSlideClick = () => {
     count++; 
-    if(count > 10){
+    if(count > colorsArr.length){
         count = 1;
     }
     
@@ -35,7 +35,7 @@ const nextSlideClick = () => {
 const backSlideClick = () => {
     count--;
     if(count < 1){
-        count = 10;
+        count = colorsArr.length;
     }
     
     addBasicSpan();

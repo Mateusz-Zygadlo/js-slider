@@ -39,6 +39,9 @@ body{
 .points span{
     margin: 0 20px;
 }
+span{
+    cursor: pointer;
+}
 
 @media only screen and (max-width: 710px) {
     .points span{
